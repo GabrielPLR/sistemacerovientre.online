@@ -58,7 +58,19 @@
       100% {
         transform: scale(1);
       }
+    
+    
+     // Função para atualizar a data atual
+    function atualizarDataAtual() {
+      var dataAtual = new Date();
+      var dia = dataAtual.getDate();
+      var mes = dataAtual.getMonth() + 1;
+      var ano = dataAtual.getFullYear();
+      document.getElementById("dataAtual").innerText = dia + "/" + mes + "/" + ano;
     }
+    
+    }
+    
     
   </style>
   <script>
